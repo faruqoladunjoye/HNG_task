@@ -16,7 +16,7 @@ app.get("/api", (req, res) => {
     "Saturday",
   ];
   const currentDay = daysOfWeek[currentDate.getUTCDay()];
-  const currentUTCTime = currentDate.toISOString();
+  const currentUTCTime = currentDate.toISOString().split(".")[0] + "Z";
 
   const response = {
     slack_name: slackName,
