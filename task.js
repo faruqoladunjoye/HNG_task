@@ -23,8 +23,9 @@ app.get("/task", (req, res) => {
     current_day: currentDay,
     utc_time: currentUTCTime,
     track: track,
-    github_file_url: "https://github.com/Faruq",
-    github_repo_url: "https://github.com/Faruq/HNG",
+    github_file_url:
+      "https://github.com/faruqoladunjoye/HNG_task/blob/main/task.js",
+    github_repo_url: "https://github.com/faruqoladunjoye/HNG_task",
     status_code: 200,
   };
   res.json(response);
